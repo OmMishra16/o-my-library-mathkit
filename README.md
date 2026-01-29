@@ -34,14 +34,14 @@ pip install omath
 ### From GitHub
 
 ```bash
-pip install git+https://github.com/OmMishra16/o-my-library-omath.git
+pip install git+https://github.com/OmMishra16/omath.git
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/OmMishra16/o-my-library-omath.git
-cd o-my-library-mathkit
+git clone https://github.com/OmMishra16/omath.git
+cd omath
 pip install -e .
 ```
 

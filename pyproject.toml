@@ -35,7 +35,7 @@ name = "omath"
 # - MAJOR: Breaking changes
 # - MINOR: New features (backwards compatible)
 # - PATCH: Bug fixes
-version = "0.1.0"
+version = "0.1.1"
 
 # Short description (shows in pip search, PyPI listing)
 description = "Math and string utilities built from first principles - no dependencies"
@@ -85,9 +85,9 @@ keywords = ["math", "utilities", "education", "first-principles", "no-dependenci
 # URLs - Links shown on PyPI
 # ------------------------------------------------------------------------------
 [project.urls]
-"Homepage" = "https://github.com/OmMishra16/o-my-library-mathkit"
-"Source" = "https://github.com/OmMishra16/o-my-library-mathkit"
-"Bug Tracker" = "https://github.com/OmMishra16/o-my-library-mathkit/issues"
+"Homepage" = "https://github.com/OmMishra16/omath"
+"Source" = "https://github.com/OmMishra16/omath"
+"Bug Tracker" = "https://github.com/OmMishra16/omath/issues"
 
 # ------------------------------------------------------------------------------
 # SETUPTOOLS CONFIGURATION
