@@ -43,8 +43,9 @@ description = "Math and string utilities built from first principles - no depend
 # Points to file with long description (shows on PyPI project page)
 readme = "README.md"
 
-# SPDX license identifier (modern format)
+# SPDX license identifier (modern format per PEP 639)
 license = "MIT"
+license-files = ["LICENSE"]
 
 # Who created this
 authors = [
