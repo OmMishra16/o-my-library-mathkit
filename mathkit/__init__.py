@@ -9,9 +9,6 @@ Built from first principles:
 This file runs when someone does: import mathkit
 """
 
-# This print helps us SEE when __init__.py executes
-print(f"[mathkit] __init__.py is executing from: {__file__}")
-
 # ============================================================
 # Arithmetic functions
 # ============================================================
@@ -71,4 +68,4 @@ __all__ = [
 # Package metadata
 # ============================================================
 __version__ = '0.1.0'
-__author__ = 'Om'
+__author__ = 'Om Mishra'

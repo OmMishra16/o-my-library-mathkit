@@ -43,12 +43,12 @@ description = "Math and string utilities built from first principles - no depend
 # Points to file with long description (shows on PyPI project page)
 readme = "README.md"
 
-# SPDX license identifier
-license = {text = "MIT"}
+# SPDX license identifier (modern format)
+license = "MIT"
 
 # Who created this
 authors = [
-    {name = "Om"}
+    {name = "Om Mishra", email = "om.23bcs10191@ms.sst.scaler.com"}
 ]
 
 # Minimum Python version required
@@ -65,7 +65,6 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Intended Audience :: Education",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
@@ -85,8 +84,9 @@ keywords = ["math", "utilities", "education", "first-principles", "no-dependenci
 # URLs - Links shown on PyPI
 # ------------------------------------------------------------------------------
 [project.urls]
-"Homepage" = "https://github.com/om/mathkit"
-"Bug Tracker" = "https://github.com/om/mathkit/issues"
+"Homepage" = "https://github.com/OmMishra16/o-my-library-mathkit"
+"Source" = "https://github.com/OmMishra16/o-my-library-mathkit"
+"Bug Tracker" = "https://github.com/OmMishra16/o-my-library-mathkit/issues"
 
 # ------------------------------------------------------------------------------
 # SETUPTOOLS CONFIGURATION
