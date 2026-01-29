@@ -1,5 +1,7 @@
 # omath
 
+> *I made this as a learning experiment driven by curiosity to understand what libraries really are, how we build our own, and this was an attempt to deepen my understanding by going through the entire process.*
+
 A Python library built from first principles for educational purposes.
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
