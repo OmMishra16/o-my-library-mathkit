@@ -28,8 +28,8 @@ build-backend = "setuptools.build_meta"
 # All of this becomes visible on PyPI and in `pip show mathkit`
 # ------------------------------------------------------------------------------
 [project]
-# The name users will type: pip install mathkit
-name = "mathkit"
+# The name users will type: pip install omath
+name = "omath"
 
 # Semantic versioning: MAJOR.MINOR.PATCH
 # - MAJOR: Breaking changes
@@ -99,4 +99,4 @@ keywords = ["math", "utilities", "education", "first-principles", "no-dependenci
 # Look for packages in the current directory
 where = ["."]
 # Include packages matching these patterns
-include = ["mathkit*"]
+include = ["omath*"]

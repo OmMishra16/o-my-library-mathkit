@@ -1,12 +1,12 @@
 """
-mathkit - A simple math and string utilities library.
+omath - A simple math and string utilities library.
 
 Built from first principles:
 - NO external libraries
 - NO standard library helpers (no str.lower, str.split, re, collections, etc.)
 - Only: loops, conditionals, lists, dicts, strings, ord(), chr()
 
-This file runs when someone does: import mathkit
+This file runs when someone does: import omath
 """
 
 # ============================================================
@@ -51,7 +51,7 @@ from .strings import (
 )
 
 # ============================================================
-# Define what "from mathkit import *" exports
+# Define what "from omath import *" exports
 # ============================================================
 __all__ = [
     # Arithmetic

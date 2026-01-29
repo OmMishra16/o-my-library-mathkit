@@ -1,4 +1,4 @@
-# mathkit
+# omath
 
 A Python library built from first principles for educational purposes.
 
@@ -28,19 +28,19 @@ Everything is implemented using only:
 ### From PyPI
 
 ```bash
-pip install mathkit
+pip install omath
 ```
 
 ### From GitHub
 
 ```bash
-pip install git+https://github.com/OmMishra16/o-my-library-mathkit.git
+pip install git+https://github.com/OmMishra16/o-my-library-omath.git
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/OmMishra16/o-my-library-mathkit.git
+git clone https://github.com/OmMishra16/o-my-library-omath.git
 cd o-my-library-mathkit
 pip install -e .
 ```
@@ -50,16 +50,16 @@ pip install -e .
 ## Quick Start
 
 ```python
-import mathkit
+import omath
 
 # Arithmetic
-result = mathkit.multiply(7, 8)  # 56 (uses repeated addition internally)
+result = omath.multiply(7, 8)  # 56 (uses repeated addition internally)
 
 # Geometry
-area = mathkit.circle_area(5)  # 78.53975
+area = omath.circle_area(5)  # 78.53975
 
 # Strings
-lower = mathkit.to_lowercase("HELLO")  # "hello" (uses ord/chr, not str.lower)
+lower = omath.to_lowercase("HELLO")  # "hello" (uses ord/chr, not str.lower)
 ```
 
 ---
@@ -78,9 +78,9 @@ All arithmetic operations are implemented from first principles:
 Returns the sum of two numbers.
 
 ```python
->>> mathkit.add(10, 5)
+>>> omath.add(10, 5)
 15
->>> mathkit.add(-3, 7)
+>>> omath.add(-3, 7)
 4
 ```
 
@@ -89,9 +89,9 @@ Returns the sum of two numbers.
 Returns the difference of two numbers.
 
 ```python
->>> mathkit.subtract(10, 3)
+>>> omath.subtract(10, 3)
 7
->>> mathkit.subtract(5, 8)
+>>> omath.subtract(5, 8)
 -3
 ```
 
@@ -100,11 +100,11 @@ Returns the difference of two numbers.
 Returns the product of two numbers using repeated addition.
 
 ```python
->>> mathkit.multiply(7, 8)
+>>> omath.multiply(7, 8)
 56
->>> mathkit.multiply(-4, 5)
+>>> omath.multiply(-4, 5)
 -20
->>> mathkit.multiply(0, 100)
+>>> omath.multiply(0, 100)
 0
 ```
 
@@ -118,13 +118,13 @@ multiply(3, 4) = 3 + 3 + 3 + 3 = 12
 Returns the integer quotient of a / b using repeated subtraction.
 
 ```python
->>> mathkit.divide(20, 4)
+>>> omath.divide(20, 4)
 5
->>> mathkit.divide(17, 5)
+>>> omath.divide(17, 5)
 3
->>> mathkit.divide(100, 7)
+>>> omath.divide(100, 7)
 14
->>> mathkit.divide(10, 0)
+>>> omath.divide(10, 0)
 None  # Division by zero returns None
 ```
 
@@ -143,11 +143,11 @@ divide(17, 5):
 Returns the remainder of a / b.
 
 ```python
->>> mathkit.modulo(17, 5)
+>>> omath.modulo(17, 5)
 2
->>> mathkit.modulo(100, 7)
+>>> omath.modulo(100, 7)
 2
->>> mathkit.modulo(10, 0)
+>>> omath.modulo(10, 0)
 None  # Modulo by zero returns None
 ```
 
@@ -156,13 +156,13 @@ None  # Modulo by zero returns None
 Returns base raised to exponent (non-negative integers only).
 
 ```python
->>> mathkit.power(2, 10)
+>>> omath.power(2, 10)
 1024
->>> mathkit.power(5, 3)
+>>> omath.power(5, 3)
 125
->>> mathkit.power(7, 0)
+>>> omath.power(7, 0)
 1
->>> mathkit.power(2, -1)
+>>> omath.power(2, -1)
 None  # Negative exponents not supported
 ```
 
@@ -177,11 +177,11 @@ power(2, 4) = multiply(multiply(multiply(1, 2), 2), 2), 2)
 Returns the absolute value of n.
 
 ```python
->>> mathkit.absolute(-42)
+>>> omath.absolute(-42)
 42
->>> mathkit.absolute(42)
+>>> omath.absolute(42)
 42
->>> mathkit.absolute(0)
+>>> omath.absolute(0)
 0
 ```
 
@@ -190,7 +190,7 @@ Returns the absolute value of n.
 A constant approximation of pi (3.14159).
 
 ```python
->>> mathkit.PI
+>>> omath.PI
 3.14159
 ```
 
@@ -205,11 +205,11 @@ Functions for calculating areas, perimeters, and volumes.
 Returns the area of a circle (PI * r^2).
 
 ```python
->>> mathkit.circle_area(5)
+>>> omath.circle_area(5)
 78.53975
->>> mathkit.circle_area(1)
+>>> omath.circle_area(1)
 3.14159
->>> mathkit.circle_area(10)
+>>> omath.circle_area(10)
 314.159
 ```
 
@@ -218,9 +218,9 @@ Returns the area of a circle (PI * r^2).
 Returns the circumference of a circle (2 * PI * r).
 
 ```python
->>> mathkit.circle_circumference(5)
+>>> omath.circle_circumference(5)
 31.4159
->>> mathkit.circle_circumference(1)
+>>> omath.circle_circumference(1)
 6.28318
 ```
 
@@ -229,9 +229,9 @@ Returns the circumference of a circle (2 * PI * r).
 Returns the area of a rectangle.
 
 ```python
->>> mathkit.rectangle_area(4, 5)
+>>> omath.rectangle_area(4, 5)
 20
->>> mathkit.rectangle_area(10, 10)
+>>> omath.rectangle_area(10, 10)
 100
 ```
 
@@ -240,9 +240,9 @@ Returns the area of a rectangle.
 Returns the perimeter of a rectangle (2 * (width + height)).
 
 ```python
->>> mathkit.rectangle_perimeter(4, 5)
+>>> omath.rectangle_perimeter(4, 5)
 18
->>> mathkit.rectangle_perimeter(10, 10)
+>>> omath.rectangle_perimeter(10, 10)
 40
 ```
 
@@ -251,9 +251,9 @@ Returns the perimeter of a rectangle (2 * (width + height)).
 Returns the area of a triangle (base * height / 2).
 
 ```python
->>> mathkit.triangle_area(10, 5)
+>>> omath.triangle_area(10, 5)
 25
->>> mathkit.triangle_area(8, 6)
+>>> omath.triangle_area(8, 6)
 24
 ```
 
@@ -262,9 +262,9 @@ Returns the area of a triangle (base * height / 2).
 Returns the area of a square (side^2).
 
 ```python
->>> mathkit.square_area(5)
+>>> omath.square_area(5)
 25
->>> mathkit.square_area(12)
+>>> omath.square_area(12)
 144
 ```
 
@@ -273,9 +273,9 @@ Returns the area of a square (side^2).
 Returns the volume of a cube (side^3).
 
 ```python
->>> mathkit.cube_volume(3)
+>>> omath.cube_volume(3)
 27
->>> mathkit.cube_volume(5)
+>>> omath.cube_volume(5)
 125
 ```
 
@@ -290,11 +290,11 @@ All string operations are implemented using `ord()` and `chr()` — no built-in 
 Converts a string to lowercase using ASCII math.
 
 ```python
->>> mathkit.to_lowercase("HELLO WORLD")
+>>> omath.to_lowercase("HELLO WORLD")
 'hello world'
->>> mathkit.to_lowercase("PyThOn")
+>>> omath.to_lowercase("PyThOn")
 'python'
->>> mathkit.to_lowercase("123 ABC")
+>>> omath.to_lowercase("123 ABC")
 '123 abc'
 ```
 
@@ -310,9 +310,9 @@ So: chr(ord('A') + 32) = 'a'
 Converts a string to uppercase using ASCII math.
 
 ```python
->>> mathkit.to_uppercase("hello world")
+>>> omath.to_uppercase("hello world")
 'HELLO WORLD'
->>> mathkit.to_uppercase("PyThOn")
+>>> omath.to_uppercase("PyThOn")
 'PYTHON'
 ```
 
@@ -321,11 +321,11 @@ Converts a string to uppercase using ASCII math.
 Splits a string by a delimiter character.
 
 ```python
->>> mathkit.split_by_char("a,b,c,d", ",")
+>>> omath.split_by_char("a,b,c,d", ",")
 ['a', 'b', 'c', 'd']
->>> mathkit.split_by_char("hello world", " ")
+>>> omath.split_by_char("hello world", " ")
 ['hello', 'world']
->>> mathkit.split_by_char("one-two-three", "-")
+>>> omath.split_by_char("one-two-three", "-")
 ['one', 'two', 'three']
 ```
 
@@ -334,11 +334,11 @@ Splits a string by a delimiter character.
 Removes leading and trailing whitespace (spaces, tabs, newlines).
 
 ```python
->>> mathkit.strip_whitespace("  hello  ")
+>>> omath.strip_whitespace("  hello  ")
 'hello'
->>> mathkit.strip_whitespace("\t\n  text  \n\t")
+>>> omath.strip_whitespace("\t\n  text  \n\t")
 'text'
->>> mathkit.strip_whitespace("no_whitespace")
+>>> omath.strip_whitespace("no_whitespace")
 'no_whitespace'
 ```
 
@@ -347,13 +347,13 @@ Removes leading and trailing whitespace (spaces, tabs, newlines).
 Checks if needle exists in haystack.
 
 ```python
->>> mathkit.contains("hello world", "world")
+>>> omath.contains("hello world", "world")
 True
->>> mathkit.contains("hello world", "xyz")
+>>> omath.contains("hello world", "xyz")
 False
->>> mathkit.contains("abcdef", "cde")
+>>> omath.contains("abcdef", "cde")
 True
->>> mathkit.contains("short", "very long string")
+>>> omath.contains("short", "very long string")
 False
 ```
 
@@ -362,11 +362,11 @@ False
 Reverses a string.
 
 ```python
->>> mathkit.reverse_string("hello")
+>>> omath.reverse_string("hello")
 'olleh'
->>> mathkit.reverse_string("Python")
+>>> omath.reverse_string("Python")
 'nohtyP'
->>> mathkit.reverse_string("12345")
+>>> omath.reverse_string("12345")
 '54321'
 ```
 
@@ -375,13 +375,13 @@ Reverses a string.
 Checks if a string is a palindrome (ignores case and non-letter characters).
 
 ```python
->>> mathkit.is_palindrome("racecar")
+>>> omath.is_palindrome("racecar")
 True
->>> mathkit.is_palindrome("A man a plan a canal Panama")
+>>> omath.is_palindrome("A man a plan a canal Panama")
 True
->>> mathkit.is_palindrome("hello")
+>>> omath.is_palindrome("hello")
 False
->>> mathkit.is_palindrome("Was it a car or a cat I saw")
+>>> omath.is_palindrome("Was it a car or a cat I saw")
 True
 ```
 
@@ -390,11 +390,11 @@ True
 Counts occurrences of each character in a string.
 
 ```python
->>> mathkit.char_count("hello")
+>>> omath.char_count("hello")
 {'h': 1, 'e': 1, 'l': 2, 'o': 1}
->>> mathkit.char_count("aaa")
+>>> omath.char_count("aaa")
 {'a': 3}
->>> mathkit.char_count("abab")
+>>> omath.char_count("abab")
 {'a': 2, 'b': 2}
 ```
 
@@ -406,9 +406,9 @@ You can also import submodules directly:
 
 ```python
 # Import specific module
-from mathkit import arithmetic
-from mathkit import geometry
-from mathkit import strings
+from omath import arithmetic
+from omath import geometry
+from omath import strings
 
 # Use functions
 arithmetic.multiply(5, 5)
@@ -419,9 +419,9 @@ strings.reverse_string("test")
 Or import specific functions:
 
 ```python
-from mathkit import add, multiply, power
-from mathkit import circle_area, rectangle_area
-from mathkit import to_lowercase, is_palindrome
+from omath import add, multiply, power
+from omath import circle_area, rectangle_area
+from omath import to_lowercase, is_palindrome
 
 result = multiply(add(2, 3), power(2, 3))  # (2+3) * 2^3 = 40
 ```
